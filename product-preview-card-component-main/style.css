@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    background-color: hsl(30, 38%, 92%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    z-index: -1;
+    font-family: 'Montserrat';
+}
+
+.all{
+    display: grid;
+    grid-template-columns: 260px 280px;
+    z-index: 1;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.img img{
+    width: 260px;
+    max-height: 410px;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: whitesmoke;
+    max-height: 405px;
+    max-width: 295px;
+    padding-left: 30px;
+    padding-right: 20px;
+}
+
+.content h1{
+    font-size: 11px;
+    color: hsl(228, 12%, 48%);
+}
+
+.content h2{
+    font-family: 'Fraunces';
+    font-size: 27px;
+    font-weight: 700;
+}
+
+.content p{
+    font-size: 14px;
+    color: hsl(228, 12%, 48%);
+}
+
+
+.content .prices{
+    font-family: 'Fraunces';
+
+}
+
+.content .desconto{
+    color: hsl(158, 36%, 37%);
+    font-size: 25px;
+}
+
+.content sup{
+    font-size: 13px;
+    text-decoration: line-through;
+    color: hsl(228, 12%, 48%);
+    
+}
+
+.button{
+    background-color: hsl(158, 36%, 37%);
+    max-width: 85%;
+    padding: 13px;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    display: flex;
+    cursor: pointer;
+}
+
+.button a{
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+}
+.button:hover{
+    background-color: hsl(228, 12%, 48%);
+}
+
+.img .mobile{
+    display: none;
+}
+
+
+
+@media screen and (max-width: 1440px){
+    .all{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .content{
+        padding: 20px;
+    }
+    
+    .img {
+        width: 335px;
+    }
+
+    .img .gone{
+        display: none;
+    }
+
+    .img .mobile{
+        width: 100%;
+        display: block;
+    }
+}
