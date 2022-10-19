@@ -25,7 +25,9 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+[Mobile](https://github.com/samuelESP/Project_Mentor/blob/main/product-preview-card-component-main/images/Screenshots/Screenshot_1.jpg);
+
+[Desktop](https://github.com/samuelESP/Project_Mentor/blob/main/product-preview-card-component-main/images/Screenshots/Screenshot_2.jpg).
 
 
 
