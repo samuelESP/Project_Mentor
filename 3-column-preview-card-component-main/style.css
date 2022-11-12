@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    width: 74%;
+    margin: auto;
+}
+
+.principal{
+    display: flex;
+    color: white;
+    height: 100vh;
+}
+
+.container{
+    margin: auto;
+    max-height: 500px;
+    display: flex;
+    border-radius: 10px;
+    overflow: hidden;
+    
+}
+
+.Juntos{
+    padding: 30px;
+    height: 335px;
+    width: 200px;
+    display: grid;
+    grid-template-rows: 50px 35px 180px 50px;
+    font-family: 'Lexend Deca', sans-serif;
+    Font-size: 14px;
+    color: hsl(0, 0%, 95%);
+    align-items: center;
+    text-align: start;
+}
+
+
+.Juntos h2{
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    font-size: 30px;
+}
+.Juntos p{
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+.Sedan{
+    background-color: hsl(31, 77%, 52%);
+}
+.Sedan .btt{
+    color: hsl(31, 77%, 52%);
+}
+
+
+.SUV{
+    background-color: hsl(184, 100%, 22%);
+}
+.SUV .btt{
+    color: hsl(184, 100%, 22%);;
+}
+
+
+
+.Luxury{
+    background-color: hsl(179, 100%, 13%);
+}
+.Luxury .btt{
+    color: hsl(179, 100%, 13%);;
+}
+
+
+
+
+.btt{
+    font-size: 15px;
+    background-color: white;
+    width: 70%;
+    height: 40px;
+    border: 2px solid white;
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+.Juntos .btt:hover{
+    background-color: transparent;
+    color: white;
+}
+
+
+@media screen and (max-width: 1023px){
+    .container{
+        flex-direction: column;
+        overflow: visible;
+    }
+    .attribution{
+        position: fixed;
+    }
+    
+}
