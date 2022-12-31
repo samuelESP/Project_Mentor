@@ -1,0 +1,177 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Manrope';
+}
+
+body{
+    height: 150vh;
+    display: flex;
+    background-color: hsl(210, 46%, 95%);
+}
+
+main{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FFFFFF;
+    border-radius: 0.6rem;
+    overflow: hidden;
+}
+
+.imgsdrawers img{
+   width: 25rem;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    width: 22rem;
+    padding: 1.5rem;
+    gap: 1rem;
+    position: relative;
+}
+
+.title{
+    font-weight: 700;
+    Font-size: 19px;
+}
+
+.about{
+    Font-size: 13px;
+}
+
+.person{
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    justify-content: space-between;
+    position: relative;
+    height: 50px;
+}
+
+.person .pp{
+    width: 3.0rem;
+    border-radius: 50%;
+}
+
+.person p{
+    position: absolute;
+    left: 5.7rem;
+}
+
+.person span{
+    color: #3f3f3fb7;
+}
+
+.person .share{
+    margin-right: 1.5rem;
+    background-color: hsl(210, 46%, 95%);
+    padding: 1rem;
+    border-radius: 50%;
+    display: block;
+}
+
+
+.tooltipContainer{
+    display: none;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    
+}
+.tooltipContainer .showTooltip{
+    background-color: hsl(217, 19%, 35%);
+    display: flex;
+    padding: 1.5rem;
+    border-radius: 10px;
+    gap: 1rem;
+}
+.tooltipContainer .text{
+    color: #FFFFFF;
+}
+
+.tooltipContainer .socialMedia{
+    display: flex;
+    gap: 2rem;
+}
+
+
+
+
+@media screen and (min-width: 1440px) {
+    
+    body{
+        height: 100vh;
+        display: flex;
+        background-color: hsl(210, 46%, 95%);
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    main{
+        min-width: 600px;
+        flex-direction: row;
+        width: 70%;
+        margin: 0 auto;
+        display: flex;
+        border-radius: 8px;
+        background-color: #FFFFFF;
+    }
+    .info{
+        width: 100%;
+        padding: 1rem 2.5rem 2.5rem 1rem; 
+        gap: 2rem;
+        font-size: 20px;
+    }
+     .info .title{
+        font-size: 22px;
+     }
+     .info .about{
+        font-size: 19px;
+     }
+     .info .person{
+        font-size: 16px;
+     }
+     .info .person .pp{
+        width: 3.6rem;
+     }
+     .tooltipContainer{
+        display: none;
+        position: absolute;
+        bottom: 25%;
+        right: 12%;
+        width: auto;
+    }
+    .tooltipContainer .showTooltip{
+        background-color: hsl(217, 19%, 35%);
+        display: flex;
+        padding: 15px;
+        border-radius: 10px;
+        gap: 1rem;
+    }
+    .tooltipContainer .text{
+        color: #FFFFFF;
+    }
+    
+    .tooltipContainer .socialMedia{
+        display: flex;
+        gap: 2rem;
+    }
+    
+
+    .imgSelection{
+        display: block;
+        background-color: hsl(214, 17%, 51%);
+        padding: 1rem;
+        border-radius: 50%;
+        margin-right: 1.5rem;
+        display: none;
+    }
+
+    
+     
+}

@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: hsl(0, 0%, 98%);
+}
+
+main{
+    height: 130vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+}
+
+header{
+    text-align: center;
+
+}
+
+header h1{
+    font-weight: 400;
+}
+
+header span{
+    font-weight: 600;
+}
+header h3{
+    font-weight: 200;
+    margin-top: 30px;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 350px 350px 350px;
+    column-gap: 30px;    
+    align-items: center;
+}
+.itens{
+    box-shadow: rgb(0 0 0 / 30%) 0px 0px 8px;
+    padding: 30px;
+    max-height: 300px;
+    background-color: white;
+    border-radius: 15px;
+}
+.itens h3{
+    font-weight: 400;
+}
+.itens p{
+    font-weight: 200;
+    color: hsl(234, 12%, 34%);
+    font-size: 15px;
+    padding-bottom: 35px;
+}
+
+
+.Builderkarma{
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+.Supervisor{
+    border-top: 5px solid hsl(180, 62%, 55%);
+}
+.Builder{
+    border-top: 5px solid hsl(0, 78%, 62%);
+}
+.Karma{
+    border-top: 5px solid hsl(34, 97%, 64%);
+}
+.Calculator{
+    border-top: 5px solid hsl(212, 86%, 64%);
+}
+
+.img{
+    display: flex;
+    justify-content: end;
+}
+
+@media screen and (max-width: 1024px) {
+    body{
+        height: 240vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        width: 280px;
+        gap: 30px;
+    }
+    footer{
+        position: fixed;
+        bottom: 0;
+        text-align: center;
+        overflow: visible;
+    }
+       
+}
