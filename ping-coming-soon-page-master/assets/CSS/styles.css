@@ -1,0 +1,149 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Libre Franklin';
+}
+
+
+.container{
+    margin: 5rem auto;
+    padding: 0 5rem;
+    position: relative;
+}
+
+.top{
+    text-align: center;
+}
+
+.top .logo{
+    margin-bottom: 5rem;
+}
+
+.top .text{
+    margin-bottom: 5.5rem;
+}
+
+.top .Title{
+    Font-size: 70px;
+    font-weight: 300;
+    color: rgb(94, 94, 94);
+    margin-bottom: 7vh;
+}
+.top .Title span{
+    font-weight: 700;
+    color: #000;
+}
+
+
+.top .SubTitle{
+    Font-size: 41px;
+    font-weight: 600;
+}
+
+.middle{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 20vh;
+    margin-top: 50vh;
+    font-weight: 700;
+}
+
+.middle .border{
+    border-radius: 70px;
+    padding: 8vh 8vh;
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+
+.middle .email{
+    border: 1.3px solid #5e5e5e;
+    outline: 0;
+}
+
+
+.middle .errorMsg{
+    color: hsl(354, 100%, 66%);
+    font-size: 32px;
+    font-weight: 300;
+    margin-left: 6vh;
+    margin-bottom: 50px;
+    display: none;
+}
+
+.middle .btn{
+    
+    background-color: hsl(223, 87%, 63%);
+    border: none;
+    color: #fff;
+}
+.middle .btn:hover{
+    background-color: hsl(223, 100%, 88%);
+    color: hsl(209, 33%, 12%);
+    cursor: pointer;
+}
+
+.copyrigth{
+    text-align: center;
+    margin-top: 30vh;
+    font-size: 30px;
+}
+
+
+
+
+
+
+@media screen and (min-width: 1440px) {
+    .middle{
+        display: block;
+        width: 1000px;
+        position: relative;
+        margin-top: 30vh;
+    }
+
+    .middle{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .middle .border{
+        padding: 4vh 6vh;
+        font-size: 25px;
+    }
+
+    .middle .email{
+        margin-left: 20px;
+        width: 470px;
+        margin-right: 40px;
+    }
+
+    .middle .btn{
+        width: 280px;
+        margin-right: 20px;
+    }
+
+    .middle .errorMsg{
+        width: 300px;
+        margin: 0;
+        position: absolute;
+        margin-left: 150px;
+        font-size: 16px;
+        bottom: 0;
+        left: 0;
+    }
+
+    .imagem img{
+        width: 1000px;
+    }
+}
