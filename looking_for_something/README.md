@@ -138,3 +138,122 @@ buttonWhite.addEventListener("click", changeStyleBack);//event when click on the
 2. If I click on the button (selected) it will close the window and will change the button to the default again.
 
 3. If I decide to click on the social media window, it will close the window and replace the button with the default one.
+
+<br><br>
+
+## sidebar
+
+Used CSS/HTML/JavaScript
+
+Make a sidebar menu. The idea is to make a sidebar that can expand when is click on the button, and disappear when clicks on the button X:
+
+
+## HTML
+```html
+<!--Lista/menu-->
+<div class="header"><!--default= display: none-->
+  <ul class="nav_list">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">New</a></li>
+    <li><a href="#">Popular</a></li>
+    <li><a href="#">Trendia></li>
+    <li><a href="#">Categories</a></li>
+  </ul>
+</div>
+<!--sombra do HTML-->
+  <div class="shadow"></div>
+<!--Butons-->
+<div class="icon_menu">
+
+    <img class="open" src="assets/images/icon-menu.svg" alt="icon-menu" style="height: 25px;width: 32px;"><!--Open the side Bar-->
+
+    <div class="close"><!--default= display: none-->
+        <img  src="assets/images/icon-menu-close.svg" alt="icon-menu-close" style="height: 25px;width: 32px;"><!--Close the side Bar-->
+    </div>
+
+</div>
+```
+## CSS
+
+```CSS
+/*That was the first time i learn about: transform, animation and transition. And i love it S2 */
+@keyframes sidebar{
+    from{
+        opacity: 0;
+        transform: translateX(100%);
+    }to{
+        opacity: 1;
+        transform: translateX(0);
+    }/*So the starting position(from) of the sidebar is outside my document window, which should have a 0.4-second animation to appear(to), when called, in my window*/
+}
+
+.icon_menu .close{
+    display: none;
+    position: absolute;
+    z-index: 100;
+    top: 0;
+}
+.nav_list{
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 27%;
+    padding-top: 7rem;
+    padding-left: 1.1rem;
+    background:hsl(0, 0%, 100%);
+    animation: sidebar .4s;
+}
+
+.nav_list li{
+    list-style-type: none;
+    font-size: 1.2rem;    
+    padding-bottom: 30px;
+}
+
+.nav_list a{
+    text-decoration: none;
+    color: #000;
+}
+
+.shadow{
+    display: none;
+    position: fixed;
+    background-color: rgba(0,0,0,.5);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    top: 0;
+    left: 0;
+}
+```
+## JS
+
+```js
+//Nothing special here
+function sideBarOn() {
+    Header.style.display = 'Block';
+    Shadow.style.display = "Block";
+    Close.style.display = 'Block';
+}
+
+function sideBarOff() {
+    Header.style.display = 'none';
+    Shadow.style.display = "none";
+    Close.style.display = 'none';
+}
+
+const Open = document.querySelector('.open');
+const Header = document.querySelector('.header');
+const Shadow = document.querySelector('.shadow');
+const Close = document.querySelector('.close');
+
+
+Open.addEventListener('click', sideBarOn);
+Close.addEventListener('click', sideBarOff);
+```
+
+1. When I click on my `open` button, it will call the function inside my JS that will put my sidebar, my shadow and my `close` button as display: block;
+
+2. When I click on my `close` button it does the exact opposite.
