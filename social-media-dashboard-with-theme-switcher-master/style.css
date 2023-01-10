@@ -1,0 +1,306 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter';
+}
+
+.corpo{
+background-color: hsl(230, 17%, 14%);
+color: #fff;
+height: 200vh;
+}
+
+.container{
+    width: 90%;
+    margin: 20px auto;
+}
+/*----------Top of my project-----------------------*/
+.dashboard{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.dashboard .title1{
+    text-align: left;
+}
+.title1{
+word-spacing: 8px;
+}
+
+.title1 h1{
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.h3{
+    color: hsl(228, 34%, 66%);
+    font-size: 14px;
+}
+
+hr{
+    border: 1px solid hsl(228, 28%, 20%);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.DorW{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+
+/*-----------Border single elements------------------------*/
+.fa{
+    border-top: 5px solid hsl(208, 92%, 53%);
+    border-radius: 5px;
+    
+}
+.tw{
+    border-top: 5px solid hsl(203, 89%, 53%);
+    border-radius: 5px;
+}
+.in{
+    border-top: 5px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(to left, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+}
+.yt{
+    border-top: 5px solid hsl(348, 97%, 39%);
+    border-radius: 5px;
+}
+/*-------------Each element-----------*/
+.element{
+    background-color: hsl(228, 28%, 20%);
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.element h2{
+    font-size: 40px;
+}
+.element .follow{
+    letter-spacing: 3px;
+    color:hsl(228, 34%, 66%);
+    margin-bottom: 15px;
+}
+.dataup{
+    font-size: 12px;
+    font-weight: 700;
+    color: hsl(163, 72%, 41%);
+}
+.datadown{
+    font-size: 12px;
+    font-weight: 700;
+    color: hsl(356, 69%, 56%);
+}
+
+.apre{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+/*-------------Single Elements------------------------*/
+.facebook{
+    background-image: url(images/icon-facebook.svg);
+    background-repeat: no-repeat;
+}
+.twitter{
+background-image: url(images/icon-twitter.svg);
+background-repeat: no-repeat;
+}
+.instagram{
+    background-image: url(images/icon-instagram.svg);
+    background-repeat: no-repeat;
+}
+.youtube{
+    background-image: url(images/icon-youtube.svg);
+    background-repeat: no-repeat;
+}
+
+/*-----------------Bottom-----------*/
+
+.title2{
+    word-spacing: 8px;
+    margin-bottom: 20px;
+}
+
+.elementbt{
+    padding: 20px;
+    background-color: hsl(228, 28%, 20%);
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.elementbt p{
+    font-size: 30px;
+    font-weight: 700;
+}
+
+
+
+.elementbt .ot span{
+    font-weight: 700;
+    font-size: 30px;
+}
+
+
+
+
+
+
+
+
+.switch {
+  font-size: 17px;
+  position: relative;
+  display: inline-block;
+  width: 3.5em;
+  height: 2em;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+
+.slider {
+  --background: #28096b;
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--background);
+  transition: .5s;
+  border-radius: 30px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 1.4em;
+  width: 1.4em;
+  border-radius: 50%;
+  left: 10%;
+  bottom: 15%;
+  box-shadow: inset 8px -4px 0px 0px #fff000;
+  background: var(--background);
+  transition: .5s;
+}
+
+input:checked + .slider {
+  background-color: #522ba7;
+}
+
+input:checked + .slider:before {
+  transform: translateX(100%);
+  box-shadow: inset 15px -4px 0px 15px #fff000;
+}
+
+
+/*----------------Ligth Mode----------------*/
+
+.corpo.white{
+    background-color: hsl(0, 0%, 100%);
+}
+.element.white{
+    background-color: hsl(227, 47%, 96%);
+}
+.elementbt.white{
+    background-color: hsl(227, 47%, 96%);
+}
+.title1.white{
+    color: hsl(228, 12%, 44%);
+}
+.title2.white{
+    color: hsl(228, 12%, 44%);
+}
+h2.white{
+    color: hsl(230, 17%, 14%);
+}
+.ot.white{
+    color: hsl(230, 17%, 14%);
+}
+/*------------------------------------*/
+
+@media screen and (min-width: 1440px) {
+    .corpo{
+        height: 100vh;
+    }
+    .top{
+        display: flex;
+        justify-content: space-between;
+        padding: 40px 0 40px 0;
+    }
+    .top hr{
+        display: none;
+    }
+    .title1 h1{
+        font-size: 60px;
+    }
+    .DorW h3{
+        margin-right: 40px;
+    }
+    .h3{
+        font-size: 30px;
+    }
+    .middle{
+        display: flex;
+        justify-content: space-between;
+    }
+    .element{
+        width: 280px;
+        height: 260px;
+        padding: 40px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .element h2{
+        font-size: 60px;
+    }
+    
+    .pointer img{
+        width: 20px;
+    }
+
+    .pointer label{
+        font-size: 15px;
+    }
+    .bottom1, .bottom2{
+        display: flex;
+        justify-content: space-between;
+    }
+    .elementbt{
+        width: 280px;
+        height: 100px;
+        padding: 30px 20px;
+        display: flex;
+        align-items: center;
+    }
+    .elementbt img{
+        width: 15px;
+    }
+    .elementbt .datadown,.dataup{
+        font-size: 15px;
+    }
+
+    
+}
